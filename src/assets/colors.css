@@ -1,0 +1,27 @@
+/* colors for buttons */
+:root {
+    --red-800: #b40000;
+    --red-600: #F55555;
+    --red-500: #FC6D6D;
+    --red-50: #faecec;
+
+    --orange-800: #993800;
+    --orange-600: #C2664E;
+    --orange-500: #DE8A74;
+    --orange-50: #f7f1ed;
+  
+    --green-900: #113A29;
+    --green-800: #235840;
+    --green-600: #30A47A;
+    --green-500: #3DC696;
+    --green-50: #DCF5EE;
+  
+    --yellow-700: #b68602;
+    --yellow-500: #FFBF52;
+    --yellow-400: #FFD788;
+    --yellow-50: #f8f4e9;
+
+    --white: #ffffff;
+
+    --dark-gray: #171717
+}

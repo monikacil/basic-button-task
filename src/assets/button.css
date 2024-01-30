@@ -1,0 +1,173 @@
+/* semantic color variables */
+:root {
+    --color-border: var(--green-900);
+
+    --color-text-light: var(--white);
+    --color-text-dark: var(--dark-gray);
+
+    --bg-white: var(--white);
+
+    --bg-green-900: var(--green-900);
+    --bg-green-800: var(--green-800);
+    --bg-green-600: var(--green-600);
+    --bg-green-500: var(--green-500);
+    --bg-green-50: var(--green-50);
+
+    --bg-red-800: var(--red-800);
+    --bg-red-600: var(--red-600);
+    --bg-red-500: var(--red-500);
+    --bg-red-50: var(--red-50);
+
+    --bg-orange-800: var(--orange-800);
+    --bg-orange-600: var(--orange-600);
+    --bg-orange-500: var(--orange-500);
+    --bg-orange-50: var(--orange-50);
+
+    --bg-yellow-700: var(--yellow-700);
+    --bg-yellow-500: var(--yellow-500);
+    --bg-yellow-400: var(--yellow-400);
+    --bg-yellow-50: var(--yellow-50);
+}
+
+.btn {
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    white-space: nowrap;
+
+    transition: background-color 100ms ease-out 100ms
+}
+
+.btn[disabled=true] {
+    pointer-events: none;
+    opacity: .4;
+}
+
+.block {
+    display: block;
+    width: 100%;
+}
+
+.outlined {
+    border: none;
+    background-color: var(--bg-white);
+}
+
+.filled {
+    border: none;
+    color: var(--color-text-light);
+}
+
+.s {
+    border-radius: 20px;
+    padding: 10px 16px;
+    
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.m {
+    border-radius: 24px;
+    padding: 14px 24px;
+    
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.l {
+    border-radius: 28px;
+    padding: 16px 24px;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* 'filled' orange button */
+.orange {
+    background-color: var(--bg-orange-600);
+}
+.orange:not([disabled=true]):hover, .orange:not([disabled=true]):focus {
+    background-color: var(--bg-orange-500);
+}
+
+/* 'outlined' orange button */
+.orange.outlined {
+    background-color: var(--bg-white);
+    box-shadow: inset 0px 0px 0px 1px var(--orange-800);
+    color: var(--orange-800)
+}
+.orange.outlined:not([disabled=true]):hover, .orange.outlined:not([disabled=true]):focus {
+    background-color: var(--bg-orange-50);
+}
+
+/* 'filled' red button */
+.red {
+    background-color: var(--red-600);
+}
+.red:not([disabled=true]):hover, .red:not([disabled=true]):focus{
+    background-color: var(--bg-red-500);
+}
+
+/* 'outlined' red button*/
+.red.outlined {
+    background-color: var(--bg-white);
+    box-shadow: inset 0px 0px 0px 1px var(--red-800);
+    color: var(--red-800)
+}
+.red.outlined:not([disabled=true]):hover, .red.outlined:not([disabled=true]):focus {
+    background-color: var(--bg-red-50);
+}
+
+/* 'filled' green button */
+.green {
+    background-color: var(--bg-green-600);
+}
+.green:not([disabled=true]):hover, .green:not([disabled=true]):focus{
+    background-color: var(--bg-green-500);
+}
+
+/* 'filled' dark-green button */
+.dark-green {
+    background-color: var(--bg-green-900);
+}
+.dark-green:not([disabled=true]):hover, .dark-green:not([disabled=true]):focus {
+    background-color: var(--bg-green-800);
+}
+
+/* 'outlined' green and dark-green button */
+.green.outlined, .dark-green.outlined {
+    background-color: var(--bg-white);
+    box-shadow: inset 0px 0px 0px 1px var(--green-900);
+    color: var(--green-900)
+}
+.green.outlined:not([disabled=true]):hover, .dark-green.outlined:not([disabled=true]):hover, .green.dark-green.outlined:not([disabled=true]):focus .dark-green.outlined:not([disabled=true]):focus {
+    background-color: var(--bg-green-50);
+}
+
+/* 'filled' yellow button */
+.yellow {
+    background-color: var(--bg-yellow-500);
+    color: var(--color-text-dark);
+
+}
+.yellow:not([disabled=true]):hover, .yellow:not([disabled=true]):focus {
+    background-color: var(--bg-yellow-400);
+}
+
+/* 'outlined' yellow button*/
+.yellow.outlined {
+    background-color: var(--bg-white);
+    box-shadow: inset 0px 0px 0px 1px var(--yellow-700);
+    color: var(--yellow-700)
+}
+.yellow.outlined:not([disabled=true]):hover, .yellow.outlined:not([disabled=true]):focus {
+    background-color: var(--bg-yellow-50);
+}
