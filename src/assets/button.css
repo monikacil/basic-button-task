@@ -1,7 +1,5 @@
 /* semantic color variables */
 :root {
-    --color-border: var(--green-900);
-
     --color-text-light: var(--white);
     --color-text-dark: var(--dark-gray);
 
